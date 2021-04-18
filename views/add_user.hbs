@@ -1,0 +1,178 @@
+<div id="wrapper">
+
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+
+            <div class="container-fluid">
+                <h3 style="color: #121efc">Add user</h3>
+                <div class="row mb-3">
+                    <div class="col">
+
+                        <div class="row mb-3 d-none">
+                            <div class="col">
+                                <div class="card textwhite bg-primary text-white shadow">
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <p class="m-0">Peformance</p>
+                                                <p class="m-0"><strong>65.2%</strong></p>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                        </div>
+                                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since
+                                            last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card textwhite bg-success text-white shadow">
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col">
+                                                <p class="m-0">Peformance</p>
+                                                <p class="m-0"><strong>65.2%</strong></p>
+                                            </div>
+                                            <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
+                                        </div>
+                                        <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since
+                                            last month</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="card shadow mb-3">
+                                    <div class="card-header py-3">
+                                        <p class="text-primary m-0 fw-bold" style="color: {{color}}">{{message}}</p>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <form action="add_user" enctype="multipart/form-data" method="post">
+
+
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="mb-3"><label class="form-label" for="name" style="color: #ff0dba"><strong>Name</strong></label>
+                                                        <input class="form-control" type="text" id="name"
+                                                               placeholder="" name="name" required/>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="email"
+                                                               style="color: #ff0dba"><strong>Email</strong></label>
+                                                        <input class="form-control" type="email"
+                                                               id="email"
+                                                               placeholder=""
+                                                               name="email" required/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="mb-3"><label class="form-label"
+                                                                             for="birthday"
+                                                                             style="color: #ff0dba"><strong>Birthday
+                                                    </strong></label><input class="form-control" type="date"
+                                                                            id="birthday" placeholder=""
+                                                                            name="birthday" required/>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col">
+
+                                                    <div class="row">
+                                                        <div class="col-0">
+                                                            <label class="form-label"
+                                                                   for="gender"
+                                                                   style="color: #ff0dba"><strong>Gender</strong></label>
+                                                        </div>
+                                                        <fieldset class="col-0">
+                                                            <div class="row">
+                                                                <div class="col-3">
+                                                                    <div class=" custom-control custom-radio ">
+                                                                        <input
+                                                                                type="radio" id="customRadio1"
+                                                                                class="custom-control-input"
+                                                                                name="gender"
+                                                                                value="male"/>
+                                                                        <label
+                                                                                class="form-label custom-control-label"
+                                                                                for="customRadio1">Male</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-3">
+
+                                                                    <div class=" custom-control custom-radio"><input
+                                                                            type="radio" id="customRadio2"
+                                                                            class="custom-control-input"
+                                                                            name="gender" value="female"/>
+                                                                        <label
+                                                                                class="form-label custom-control-label"
+                                                                                for="customRadio2">Female</label></div>
+                                                                </div>
+                                                            </div>
+                                                        </fieldset>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+
+                                                    <div class="mb-3"><label class="form-label" for="phone"
+                                                                             style="color: #ff0dba"><strong>Phone</strong></label><input
+                                                            class="form-control" type="tel" id="phone"
+                                                            placeholder="" name="phone" required/></div>
+                                                </div>
+
+                                                <div class="col">
+                                                    <div class="mb-3"><label class="form-label" for="password"
+                                                                             style="color: #ff0dba"><strong>Password</strong></label><input
+                                                            class="form-control" type="text" id="password"
+                                                            placeholder="" name="password" required/></div>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="mb-3"><label class="form-label"
+                                                                         for="address"
+                                                                         style="color: #ff0dba"><strong>Address</strong></label><input
+                                                        class="form-control" type="text" id="address"
+                                                        placeholder="" name="address"></div>
+                                            </div>
+
+
+
+                                            <div class="mb-3 text-center">
+                                                <button class="btn btn-primary btn-success" type="submit"
+                                                        style="border-radius: 5px;color: #ffffff;background-image: linear-gradient(to right, #ff6341, rgb(255,0,107)); border: none">
+                                                    Register
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="bg-gray-200 sticky-footer">
+            <div class="container my-auto">
+                <div class="text-center my-auto copyright"><span>Copyright © LeVanSon 2021</span></div>
+            </div>
+        </footer>
+    </div>
+    <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>

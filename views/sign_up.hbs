@@ -1,0 +1,26 @@
+<body class="text-center" style="background-image: url(img/background_gradient.png?h=3d64b2b8a735847606d75de03d631130);background-repeat: no-repeat;background-size: cover;margin: 0;padding: 20px;">
+<form action="/sign_up" enctype="multipart/form-data" method="post" style="color: #000;background: #fff;padding: 30px 20px;margin: 0 auto;width: 90%;border-radius: 10px;max-width: 350px;">
+    <div class="illustration"><a href="/"><img src="img/tinderlogo2.png" style="background-size: cover;width: 4rem;" /></a>
+        <h1 style="font-size: medium;margin: 10px;font-style: italic;">CREATE ACCOUNT</h1>
+        <h6 style="color: {{color}}">{{message}}</h6>
+    </div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Name (*)</label><input name="name" type="text" class="form-control"  required/></div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Birthday (*)</label><input name="birthday" class="form-control" type="date" required></div>
+    <div class="form-group" style="display: inline-flex;width: 20rem;"><label style="color: #fb6488;width: 5rem;">Gender:&nbsp;</label>
+        <div class="form-check" style="margin: 3px;"><input value="male" name="gender" class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1" style="color: #000;">Male</label></div>
+        <div class="form-check" style="margin: 3px 5px;"><input value="female" name="gender" class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="color: #000;">Female</label></div>
+    </div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Phone number (*)</label><input name="phone" type="tel" class="form-control"  required/></div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Email (*)</label><input class="form-control" type="email" name="email" placeholder="" required></div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Address (*)</label><input class="form-control" type="text" name="address" placeholder="" required></div>
+
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Password (*)</label><input class="form-control" type="password" name="password" placeholder="" required></div>
+    <div class="form-group" style="text-align: left;"><label style="/*text-align: left;*/color: rgb(252,126,148);margin: 0 2px;">Confirm Password (*)</label><input class="form-control" type="password" name="confirm_password" placeholder="" required></div>
+    <div class="form-group"><button class="btn btn-primary btn-block" type="submit" role="button"  style="border-radius: 50px;color: #ffffff;background-image: linear-gradient(to right, #ff6341, rgb(255,0,107));">Register</button></div><a class="forgot" href="sign_in">I have an account. Sign in here.</a>
+</form>
+
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+</body>

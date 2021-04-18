@@ -1,0 +1,20 @@
+<h2>{{message}}</h2><br>
+
+{{#each users}}
+
+  <div>
+      <div><img class="rounded-circle me-2" width="30" height="30"
+               src="{{this.avatar}}">
+          <a href="user.id={{this._id}}"> <label for="btnInfo" style="color: #1c1c21"><strong>{{this.name}}</strong></label></a>
+      </div>
+
+      <div>Birthday: {{this.birthday}}</div>
+      <div>Gender: {{this.gender}}</div>
+      <div>Phone: {{this.phone}}</div>
+      <div>Email: {{this.email}}</div>
+      <div>Address: {{this.address}}</div>
+      <div>Password: {{this.password}}</div>
+      <div></div><br>
+
+  </div>
+{{/each}}
